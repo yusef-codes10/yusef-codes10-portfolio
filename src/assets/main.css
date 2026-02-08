@@ -1,0 +1,16 @@
+:root {
+    --scroll-color: linear-gradient(90deg,
+            #c49a6c 0%,
+            #f1d6a4 18%,
+            #f8e6be 50%,
+            #f1d6a4 82%,
+            #c49a6c 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background: var(--scroll-color);
+    height: 100dvh; */
+}
