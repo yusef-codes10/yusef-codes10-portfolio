@@ -1,7 +1,15 @@
 <script setup></script>
 
 <template>
-  <h1>You did it!</h1>
+  <footer>This is the footer</footer>
 </template>
 
-<style scoped></style>
+<style scoped>
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 10dvh;
+  background: var(--dark-brown);
+}
+</style>
