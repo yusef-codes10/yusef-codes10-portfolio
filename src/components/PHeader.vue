@@ -18,5 +18,6 @@ nav {
 h1 {
   color: var(--font-color);
   font-family: 'Poppins', sans-serif;
+  font-size: clamp(1.2rem, 4vw + 1rem, 2rem);
 }
 </style>
