@@ -17,5 +17,6 @@ nav {
 
 h1 {
   color: var(--font-color);
+  font-family: 'Poppins', sans-serif;
 }
 </style>

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&display=swap');
+
 :root {
     --scroll-color: linear-gradient(90deg,
             #c49a6c 0%,
@@ -8,6 +10,9 @@
     --dark-brown: #271408;
     --header-color: linear-gradient(to bottom, #200C05, #3D180C);
     --font-color: #E5C46B;
+
+
+    --font-primary: 'Klee One', cursive;
 }
 
 * {
@@ -16,4 +21,5 @@
     box-sizing: border-box;
     /* background: var(--scroll-color);
     height: 100dvh; */
+    font-family: 'Klee One', cursive;
 }
