@@ -1,9 +1,16 @@
-<script setup></script>
+<script setup>
+import { ref } from 'vue'
+
+const isFolded = ref(false)
+
+const foldScroll = () => {}
+console.log(foldScroll)
+</script>
 
 <template>
   <!-- <h1>You did it!</h1> -->
   <div class="scene">
-    <div class="container-scroll">
+    <div class="container-scroll" :class="isFolded ? '' : ''">
       <!-- Top cylinder rod -->
       <div class="scroll-rod top">
         <div class="rod-end left"></div>
@@ -18,8 +25,8 @@
           <p>Ancient wisdom lies within this sacred scroll...</p>
 
           <div class="buttons">
-            <button>展開 (Unfold)</button>
-            <button>巻く (Fold)</button>
+            <button @click="isFolded">展開 (Unfold)</button>
+            <button @click="isFolded">巻く (Fold)</button>
           </div>
         </div>
       </div>
