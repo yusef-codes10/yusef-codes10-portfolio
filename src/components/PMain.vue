@@ -3,18 +3,24 @@ import { ref } from 'vue'
 
 const isFolded = ref(false)
 
-const foldScroll = () => {}
+const foldScroll = () => {
+  isFolded.value = true
+}
+
+const unfoldScroll = () => {
+  isFolded.value = false
+}
 console.log(foldScroll)
 </script>
 
 <template>
   <!-- <h1>You did it!</h1> -->
   <div class="scene">
-    <div class="container-scroll" :class="isFolded ? '' : ''">
+    <div class="container-scroll" :class="isFolded ? 'folded' : 'container-scroll'">
       <!-- Top cylinder rod -->
       <div class="scroll-rod top">
         <div class="rod-end left"></div>
-        <div class="rod-cylinder"></div>
+        <div class="rod-cylinder" @click="unfoldScroll"></div>
         <div class="rod-end right"></div>
       </div>
 
@@ -25,8 +31,8 @@ console.log(foldScroll)
           <p>Ancient wisdom lies within this sacred scroll...</p>
 
           <div class="buttons">
-            <button @click="isFolded">展開 (Unfold)</button>
-            <button @click="isFolded">巻く (Fold)</button>
+            <button @click="unfoldScroll">展開 (Unfold)</button>
+            <button @click="foldScroll">巻く (Fold)</button>
           </div>
         </div>
       </div>
@@ -246,7 +252,7 @@ button:active {
 }
 
 /* === FOLDED STATE === */
-.container-scroll.folded {
+.folded {
   height: 120px;
 }
 
