@@ -20,7 +20,7 @@ console.log(foldScroll)
       <!-- Top cylinder rod -->
       <div class="scroll-rod top">
         <div class="rod-end left"></div>
-        <div class="rod-cylinder" @click="unfoldScroll"></div>
+        <div class="rod-cylinder" @click="foldScroll"></div>
         <div class="rod-end right"></div>
       </div>
 
@@ -40,7 +40,7 @@ console.log(foldScroll)
       <!-- Bottom cylinder rod -->
       <div class="scroll-rod bottom">
         <div class="rod-end left"></div>
-        <div class="rod-cylinder"></div>
+        <div class="rod-cylinder" @click="unfoldScroll"></div>
         <div class="rod-end right"></div>
       </div>
     </div>
@@ -54,9 +54,10 @@ console.log(foldScroll)
 
 .container-scroll {
   width: 420px;
-  height: 520px;
+  height: 500px;
   position: relative;
   transition: height 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 0.5rem 0;
 }
 
 /* === SCROLL RODS (CYLINDERS) === */
@@ -253,7 +254,7 @@ button:active {
 
 /* === FOLDED STATE === */
 .folded {
-  height: 120px;
+  height: 32px;
 }
 
 .container-scroll.folded .scroll-paper {
