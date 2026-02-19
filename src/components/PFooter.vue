@@ -5,7 +5,9 @@
     <i class="fa-brands fa-linkedin"></i>
     <i class="fa-brands fa-twitter"></i>
     <i class="fa-brands fa-youtube"></i>
-    <i class="fa-brands fa-github"></i>
+    <a href="https://github.com/yusef-codes10" target="_blank">
+      <i class="fa-brands fa-github"></i>
+    </a>
   </footer>
 </template>
 
