@@ -70,14 +70,14 @@
   width: 16px;
   height: 32px;
   background: linear-gradient(to right, #3d2817, #5a3d25, #3d2817);
-  border-radius: 8px;
+  /* border-radius: 8px; */
   position: relative;
   box-shadow:
     inset 2px 0 4px rgba(0, 0, 0, 0.5),
     inset -2px 0 4px rgba(0, 0, 0, 0.3);
 }
 
-.rod-end.left {
+/* .rod-end.left {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
@@ -85,7 +85,7 @@
 .rod-end.right {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-}
+} */
 
 /* Main cylinder body */
 .rod-cylinder {
