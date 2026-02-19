@@ -4,11 +4,7 @@ import { ref } from 'vue'
 const isFolded = ref(false)
 
 const foldScroll = () => {
-  isFolded.value = true
-}
-
-const unfoldScroll = () => {
-  isFolded.value = false
+  isFolded.value = !isFolded.value
 }
 console.log(foldScroll)
 </script>
@@ -40,7 +36,7 @@ console.log(foldScroll)
       <!-- Bottom cylinder rod -->
       <div class="scroll-rod bottom">
         <div class="rod-end left"></div>
-        <div class="rod-cylinder" @click="unfoldScroll"></div>
+        <div class="rod-cylinder" @click="foldScroll"></div>
         <div class="rod-end right"></div>
       </div>
     </div>
