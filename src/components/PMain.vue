@@ -152,14 +152,7 @@
   overflow: hidden;
 
   /* Parchment base */
-  background: linear-gradient(
-    90deg,
-    #c49a6c 0%,
-    #f1d6a4 18%,
-    #f8e6be 50%,
-    #f1d6a4 82%,
-    #c49a6c 100%
-  );
+  background: var(--scroll-color);
 
   /* Depth and texture */
   box-shadow:
