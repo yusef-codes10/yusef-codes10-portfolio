@@ -1,11 +1,12 @@
 <script setup>
 import PHeader from './components/PHeader.vue'
 import PFooter from './components/PFooter.vue'
+import PMain from './components/PMain.vue'
 </script>
 
 <template>
   <PHeader />
-  <h1>You did it!</h1>
+  <PMain />
   <PFooter />
 </template>
 
