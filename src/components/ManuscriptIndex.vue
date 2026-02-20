@@ -28,6 +28,8 @@ import { playClickSound } from '@/sound/click.js'
   height: 500px;
   margin: 0.5rem;
   display: flex;
+  /* width: auto; */
+  /* flex: 1; */
 }
 
 .icons {
