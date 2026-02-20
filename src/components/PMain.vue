@@ -52,6 +52,7 @@ console.log(foldScroll)
 }
 
 .container-scroll {
+  /* transform: rotate(90deg); */
   width: 420px;
   height: 500px;
   position: relative;
