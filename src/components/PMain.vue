@@ -251,6 +251,7 @@ button:active {
 /* === FOLDED STATE === */
 .folded {
   height: 32px;
+  /* height: 85px; */
 }
 
 .container-scroll.folded .scroll-paper {
