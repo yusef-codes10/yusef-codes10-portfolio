@@ -48,6 +48,7 @@ console.log(foldScroll)
 <style scoped>
 .scene {
   perspective: 1000px;
+  grid-area: scroll;
 }
 
 .container-scroll {

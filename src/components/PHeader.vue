@@ -9,6 +9,10 @@
 </template>
 
 <style scoped>
+header {
+  grid-area: navbar;
+}
+
 nav {
   height: 10dvh;
   background: var(--header-color);

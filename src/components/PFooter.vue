@@ -13,6 +13,7 @@
 
 <style scoped>
 footer {
+  grid-area: footer;
   position: fixed;
   bottom: 0;
   width: 100%;
