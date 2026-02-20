@@ -3,10 +3,12 @@
 
 <template>
   <div class="kanji">
-    <div class="icon-field">我 <span>About</span></div>
-    <div class="icon-field">匠 <span>Work</span></div>
-    <div class="icon-field">縁 <span>Links</span></div>
-    <div class="icon-field">交 <span>Conctact</span></div>
+    <div class="icons">
+      <div class="icon-field">我 <span>About</span></div>
+      <div class="icon-field">匠 <span>Work</span></div>
+      <div class="icon-field">縁 <span>Links</span></div>
+      <div class="icon-field">交 <span>Conctact</span></div>
+    </div>
     <!-- 我 (one self) 匠 (Craft/Master)
     <br />
     縁 (connections)
@@ -26,6 +28,14 @@
   display: flex;
 }
 
+.icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: flex-end;
+  width: 100%;
+}
+
 .icon-field {
   font-size: 4rem;
   font-family: 'Yuji Boku', sans-serif;
@@ -37,7 +47,21 @@
 
   cursor: pointer;
 
-  background-color: seagreen;
+  /* background-color: seagreen; */
+
+  padding: 12px 24px;
+  border: 2px solid #3d2817;
+  background: #f1d6a4;
+  color: #3d2817;
+  /* font-family: 'Klee One', cursive; */
+  /* font-size: 14px; */
+  /* cursor: pointer; */
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+
+  width: 116px;
+  height: 124px;
 }
 
 span {
