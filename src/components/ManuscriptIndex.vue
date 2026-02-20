@@ -3,11 +3,15 @@
 
 <template>
   <div class="kanji">
-    我 (one self) 匠 (Craft/Master)
+    <div class="icon">我 <span>About</span></div>
+    <div class="icon">匠 <span>Work</span></div>
+    <div class="icon">縁 <span>Links</span></div>
+    <div class="icon">交 <span>Conctact Me</span></div>
+    <!-- 我 (one self) 匠 (Craft/Master)
     <br />
     縁 (connections)
     <br />
-    交 (interaction)
+    交 (interaction) -->
   </div>
 </template>
 
@@ -17,6 +21,17 @@
   font-family: 'Yuji Boku', sans-serif;
   grid-area: manuscript;
   border: 3px solid red;
-  height: 200px;
+  height: 500px;
+  margin: 0.5rem;
+}
+
+.icon {
+  font-size: 4rem;
+  font-family: 'Yuji Boku', sans-serif;
+  font-weight: 600;
+}
+
+span {
+  font-family: 'Yuji Boku', sans-serif;
 }
 </style>
