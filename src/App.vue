@@ -8,10 +8,9 @@ import ManuscriptIndex from './components/ManuscriptIndex.vue'
 <template>
   <div class="portfolio">
     <PHeader />
-    <div class="main-section">
-      <PMain />
-      <ManuscriptIndex />
-    </div>
+
+    <PMain />
+    <ManuscriptIndex />
     <PFooter />
   </div>
 </template>
@@ -26,5 +25,6 @@ import ManuscriptIndex from './components/ManuscriptIndex.vue'
     'navbar navbar'
     'scroll manuscript'
     'footer footer';
+  grid-template-rows: 1fr auto 1fr;
 }
 </style>
