@@ -1,8 +1,10 @@
 // here are the click object
-const clickSound1 = new Audio('/sound.click.mp3')
+const clickSound1 = new Audio('/sound/click.mp3')
 
 const playClickSound = () => {
-  clickSound1.play()
+  clickSound1.play().catch((err) => {
+    console.warn('Audio failed to play:', err)
+  })
 }
 
 export { playClickSound }
