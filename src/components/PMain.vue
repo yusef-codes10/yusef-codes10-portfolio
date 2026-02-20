@@ -59,7 +59,10 @@ console.log(foldScroll)
     /* ── TOP EDGE ── */ 0% 0%,
     100% 0%,
 
-    /* ── RIGHT EDGE (top → bottom) ── */ 100% 9px,
+    /* ── RIGHT EDGE (top → bottom) ── */
+    /* * each triangle is defined by three points (A, B and C) */
+    /* And each point needs corddinants (x, y) */ /* A (x, y) = 100%, 9px */
+    /* B (x, y) =  calc(100% - 11px), 15px*/ 100% 9px,
     calc(100% - 11px) 15px,
     100% 21px,
     100% 39px,
