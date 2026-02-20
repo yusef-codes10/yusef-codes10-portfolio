@@ -1,13 +1,15 @@
 <!-- This is where we going to have the paper that shows the icons -->
-<script setup></script>
+<script setup>
+import { playClickSound } from '@/sound/click.js'
+</script>
 
 <template>
   <div class="kanji">
     <div class="icons">
-      <div class="icon-field">我 <span>About</span></div>
-      <div class="icon-field">匠 <span>Work</span></div>
-      <div class="icon-field">縁 <span>Links</span></div>
-      <div class="icon-field">交 <span>Conctact</span></div>
+      <div class="icon-field" @click="playClickSound">我 <span>About</span></div>
+      <div class="icon-field" @click="playClickSound">匠 <span>Work</span></div>
+      <div class="icon-field" @click="playClickSound">縁 <span>Links</span></div>
+      <div class="icon-field" @click="playClickSound">交 <span>Conctact</span></div>
     </div>
     <!-- 我 (one self) 匠 (Craft/Master)
     <br />
@@ -19,7 +21,7 @@
 
 <style scoped>
 .kanji {
-  font-size: 4rem;
+  /* font-size: 4rem; */
   font-family: 'Yuji Boku', sans-serif;
   grid-area: manuscript;
   border: 3px solid red;
@@ -34,10 +36,11 @@
   align-items: center;
   align-self: flex-end;
   width: 100%;
+  margin: 0.5rem 1rem;
 }
 
 .icon-field {
-  font-size: 4rem;
+  font-size: 3rem;
   font-family: 'Yuji Boku', sans-serif;
   font-weight: 600;
   display: flex;
@@ -62,6 +65,17 @@
 
   width: 116px;
   height: 124px;
+}
+
+.icon-field:hover {
+  background: #c49a6c;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.icon-field:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 span {
