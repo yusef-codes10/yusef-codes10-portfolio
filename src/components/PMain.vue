@@ -25,8 +25,8 @@ console.log(foldScroll)
       <!-- Scroll paper content -->
       <div class="scroll-paper">
         <div class="scroll-content">
-          <h2>秘伝の巻物</h2>
-          <p>Ancient wisdom lies within this sacred scroll...</p>
+          <h2>Hi, I'm <span>Yusef</span></h2>
+          <p>Your friendly Nieghborhood Web Developer</p>
 
           <div class="buttons">
             <button @click="foldScroll">展開 (Unfold)</button>
@@ -232,7 +232,7 @@ console.log(foldScroll)
   color: #3d2817;
 }
 
-.scroll-content h2 {
+h2 {
   font-size: 28px;
   margin: 0;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
@@ -302,5 +302,13 @@ button:active {
   to {
     height: 120px;
   }
+}
+
+span {
+  font-family: 'Yuji Boku', sans-serif;
+}
+
+h2 {
+  font-size: clamp(2rem, 5vw + 1rem, 2.6rem);
 }
 </style>
