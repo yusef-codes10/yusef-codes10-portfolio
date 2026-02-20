@@ -62,9 +62,11 @@ console.log(foldScroll)
     /* ── RIGHT EDGE (top → bottom) ── */
     /* * each triangle is defined by three points (A, B and C) */
     /* And each point needs corddinants (x, y) */ /* A (x, y) = 100%, 9px */
-    /* B (x, y) =  calc(100% - 11px), 15px*/ 100% 9px,
+    /* B (x, y) =  calc(100% - 11px), 15px*/
+    /* for the B point, which the dpeth we need to calculates it.s x point using the 100% on the right or the )% on the left, just to make it clean */
+    100% 9px,
     calc(100% - 11px) 15px,
-    100% 21px,
+    100% 15px,
     100% 39px,
     calc(100% - 11px) 45px,
     100% 51px,
