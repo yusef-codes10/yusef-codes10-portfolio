@@ -15,5 +15,8 @@
 .kanji {
   font-size: 4rem;
   font-family: 'Yuji Boku', sans-serif;
+  grid-area: manuscript;
+  border: 3px solid red;
+  height: 200px;
 }
 </style>
