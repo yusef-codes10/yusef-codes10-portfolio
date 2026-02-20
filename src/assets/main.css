@@ -10,6 +10,7 @@
     --dark-brown: #271408;
     --header-color: linear-gradient(to bottom, #200C05, #3D180C);
     --font-color: #E5C46B;
+    --background-color: #2a1810;
 
 
     --font-primary: 'Klee One', cursive;
@@ -22,4 +23,8 @@
     /* background: var(--scroll-color);
     height: 100dvh; */
     font-family: 'Klee One', cursive;
+}
+
+body {
+    background-color: var(--background-color);
 }
