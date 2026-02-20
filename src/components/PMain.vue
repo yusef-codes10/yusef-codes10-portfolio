@@ -1,10 +1,12 @@
 <script setup>
 import { ref } from 'vue'
+import { playClickSound } from '@/sound/click.js'
 
 const isFolded = ref(false)
 
 const foldScroll = () => {
   isFolded.value = !isFolded.value
+  playClickSound()
 }
 console.log(foldScroll)
 </script>
@@ -27,7 +29,7 @@ console.log(foldScroll)
           <p>Ancient wisdom lies within this sacred scroll...</p>
 
           <div class="buttons">
-            <button @click="unfoldScroll">展開 (Unfold)</button>
+            <button @click="foldScroll">展開 (Unfold)</button>
             <button @click="foldScroll">巻く (Fold)</button>
           </div>
         </div>
