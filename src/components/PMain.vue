@@ -41,14 +41,6 @@ console.log(foldScroll)
       </div>
     </div>
   </div>
-
-  <div class="kanji">
-    我 (one self) 匠 (Craft/Master)
-    <br />
-    縁 (connections)
-    <br />
-    交 (interaction)
-  </div>
 </template>
 
 <style scoped>
@@ -283,10 +275,5 @@ button:active {
   to {
     height: 120px;
   }
-}
-
-.kanji {
-  font-size: 4rem;
-  font-family: 'Yuji Boku', sans-serif;
 }
 </style>
