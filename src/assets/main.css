@@ -14,6 +14,7 @@
 
 
     --font-primary: 'Klee One', cursive;
+    --font-icons: 'Yuji Boku', sans-serif;
 }
 
 * {
@@ -22,7 +23,7 @@
     box-sizing: border-box;
     /* background: var(--scroll-color);
     height: 100dvh; */
-    font-family: 'Klee One', cursive;
+    font-family: var(--font-primary);
 }
 
 body {

@@ -3,12 +3,14 @@ import PHeader from './components/PHeader.vue'
 import PFooter from './components/PFooter.vue'
 import PMain from './components/PMain.vue'
 import ManuscriptIndex from './components/ManuscriptIndex.vue'
+// import ScrollPaper from './components/scroll/ScrollPaper.vue'
 </script>
 
 <template>
   <div class="portfolio">
     <PHeader />
     <PMain />
+    <!-- <ScrollPaper /> -->
     <ManuscriptIndex />
     <PFooter />
   </div>

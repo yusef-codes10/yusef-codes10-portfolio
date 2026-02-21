@@ -23,7 +23,7 @@ console.log(foldScroll)
       </div>
 
       <!-- Scroll paper content -->
-      <div class="scroll-paper">
+      <!-- <div class="scroll-paper">
         <div class="scroll-content">
           <h2>Hi, I'm <span>Yusef</span></h2>
           <p>Your friendly Nieghborhood Web Developer</p>
@@ -33,7 +33,7 @@ console.log(foldScroll)
             <button @click="foldScroll">巻く (Fold)</button>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <!-- Bottom cylinder rod -->
       <div class="scroll-rod bottom">
@@ -306,7 +306,7 @@ button:active {
 }
 
 span {
-  font-family: var(--font-icons);
+  font-family: 'Yuji Boku', sans-serif;
 }
 
 h2 {
