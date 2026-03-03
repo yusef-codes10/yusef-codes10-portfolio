@@ -22,6 +22,8 @@ console.log(foldScroll)
         <div class="rod-end right"></div>
       </div>
 
+      <slot></slot>
+
       <!-- Scroll paper content -->
       <!-- <div class="scroll-paper">
         <div class="scroll-content">
