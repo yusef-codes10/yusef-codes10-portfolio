@@ -3,16 +3,16 @@
 import { playClickSound } from '@/sound/click.js'
 import { defineEmits } from 'vue';
 
-const emit = defineEmits(['about', 'work', 'links', 'contact'])
+const emit = defineEmits(['show'])
 </script>
 
 <template>
   <div class="kanji">
     <div class="icons">
-      <div class="icon-field" @click="playClickSound, emit('about')">我 <span>About</span></div>
-      <div class="icon-field" @click="playClickSound, emit('work')">匠 <span>Work</span></div>
-      <div class="icon-field" @click="playClickSound, emit('links')">縁 <span>Links</span></div>
-      <div class="icon-field" @click="playClickSound, emit('contact')">交 <span>Conctact</span></div>
+      <div class="icon-field" @click="playClickSound, emit('show')">我 <span>About</span></div>
+      <div class="icon-field" @click="playClickSound, emit('show')">匠 <span>Work</span></div>
+      <div class="icon-field" @click="playClickSound, emit('show')">縁 <span>Links</span></div>
+      <div class="icon-field" @click="playClickSound, emit('show')">交 <span>Conctact</span></div>
     </div>
     <!-- 我 (one self) 匠 (Craft/Master)
     <br />
