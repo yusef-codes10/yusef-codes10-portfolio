@@ -20,7 +20,7 @@ const toggleIsOpen = () => {
     <PHeader />
     <!-- <PMain /> -->
     <!-- <ScrollPaper /> -->
-    <ManuscriptIndex @show="toggleIsOpen"/>
+    <ManuscriptIndex @about="toggleIsOpen" @work="toggleIsOpen" @links="toggleIsOpen" @contact="toggleIsOpen"/>
     <ScrollPaper>
       <!-- Scroll paper content -->
       <div class="scroll-paper">
@@ -37,6 +37,10 @@ const toggleIsOpen = () => {
     </ScrollPaper>
 
     <ScrollPaper v-if="isOpen"></ScrollPaper>
+    <ScrollPaper v-if="isOpen"></ScrollPaper>
+    <ScrollPaper v-if="isOpen"></ScrollPaper>
+    <ScrollPaper v-if="isOpen"></ScrollPaper>
+
 
     <PFooter />
   </div>
