@@ -24,7 +24,8 @@ const setSection = (section) => {
 
 
     <ScrollPaper v-if="currentSection === 'about'">
-      about
+      about 
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, magni! Adipisci soluta enim, mollitia impedit quia aut consequatur aliquam, asperiores facilis veniam earum, culpa consectetur distinctio suscipit magnam fugiat recusandae.
     </ScrollPaper>
     <ScrollPaper v-if="currentSection === 'work'">
       work
