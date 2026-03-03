@@ -1,7 +1,7 @@
 <script setup>
 import PHeader from './components/PHeader.vue'
 import PFooter from './components/PFooter.vue'
-import PMain from './components/PMain.vue'
+// import PMain from './components/PMain.vue'
 import ManuscriptIndex from './components/ManuscriptIndex.vue'
 import ScrollPaper from './components/scroll/ScrollPaper.vue'
 // import ScrollPaper from './components/scroll/ScrollPaper.vue'
@@ -9,6 +9,10 @@ import ScrollPaper from './components/scroll/ScrollPaper.vue'
 import { ref } from 'vue'
 
 const isOpen = ref(false)
+
+const toggleIsOpen = () => {
+  isOpen.value = !isOpen.value
+}
 </script>
 
 <template>
