@@ -8,10 +8,10 @@ import ScrollPaper from './components/scroll/ScrollPaper.vue'
 
 import { ref } from 'vue'
 
-const isOpen = ref(false)
+const currentSection = ref(null)
 
-const toggleIsOpen = () => {
-  isOpen.value = !isOpen.value
+const setSection = (section) => {
+  currentSection.value = section
 }
 </script>
 
