@@ -9,10 +9,10 @@ const emit = defineEmits(['show'])
 <template>
   <div class="kanji">
     <div class="icons">
-      <div class="icon-field" @click="playClickSound">我 <span>About</span></div>
-      <div class="icon-field" @click="playClickSound">匠 <span>Work</span></div>
-      <div class="icon-field" @click="playClickSound">縁 <span>Links</span></div>
-      <div class="icon-field" @click="playClickSound">交 <span>Conctact</span></div>
+      <div class="icon-field" @click="playClickSound, emit('show')">我 <span>About</span></div>
+      <div class="icon-field" @click="playClickSound, emit('show')">匠 <span>Work</span></div>
+      <div class="icon-field" @click="playClickSound, emit('show')">縁 <span>Links</span></div>
+      <div class="icon-field" @click="playClickSound, emit('show')">交 <span>Conctact</span></div>
     </div>
     <!-- 我 (one self) 匠 (Craft/Master)
     <br />
