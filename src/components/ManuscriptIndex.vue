@@ -1,6 +1,9 @@
 <!-- This is where we going to have the paper that shows the icons -->
 <script setup>
 import { playClickSound } from '@/sound/click.js'
+import { defineEmits } from 'vue';
+
+const emit = defineEmits(['show'])
 </script>
 
 <template>
