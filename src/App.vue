@@ -161,3 +161,4 @@ h2 {
   font-size: clamp(2rem, 5vw + 1rem, 2.6rem);
 }
 </style>
+<!-- TODO: switch the entire design, main component serves as a container for the main section, reusable scroll paper component, and one emit + 4 different state for each scroll -->
