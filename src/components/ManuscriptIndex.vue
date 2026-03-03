@@ -1,6 +1,6 @@
 <!-- This is where we going to have the paper that shows the icons -->
 <script setup>
-import { playClickSound } from '@/sound/click.js'
+// import { playClickSound } from '@/sound/click.js'
 import { defineEmits } from 'vue';
 
 const emit = defineEmits(['show'])
@@ -9,10 +9,10 @@ const emit = defineEmits(['show'])
 <template>
   <div class="kanji">
     <div class="icons">
-      <div class="icon-field" @click="playClickSound, emit('show')">我 <span>About</span></div>
-      <div class="icon-field" @click="playClickSound, emit('show')">匠 <span>Work</span></div>
-      <div class="icon-field" @click="playClickSound, emit('show')">縁 <span>Links</span></div>
-      <div class="icon-field" @click="playClickSound, emit('show')">交 <span>Conctact</span></div>
+      <div class="icon-field" @click="emit('show')">我 <span>About</span></div>
+      <div class="icon-field" @click="emit('show')">匠 <span>Work</span></div>
+      <div class="icon-field" @click="emit('show')">縁 <span>Links</span></div>
+      <div class="icon-field" @click="emit('show')">交 <span>Conctact</span></div>
     </div>
     <!-- 我 (one self) 匠 (Craft/Master)
     <br />

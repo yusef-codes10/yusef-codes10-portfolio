@@ -20,26 +20,21 @@ const setSection = (section) => {
     <PHeader />
     <!-- <PMain /> -->
     <!-- <ScrollPaper /> -->
-    <ManuscriptIndex @about="toggleIsOpen" @work="toggleIsOpen" @links="toggleIsOpen" @contact="toggleIsOpen"/>
-    <ScrollPaper>
-      <!-- Scroll paper content -->
-      <div class="scroll-paper">
-        <div class="scroll-content">
-          <h2>Hi, I'm <span>Yusef</span></h2>
-          <p>Your friendly Nieghborhood Web Developer</p>
+    <ManuscriptIndex @show="setSection"/>
 
-          <div class="buttons">
-            <button @click="foldScroll">展開 (Unfold)</button>
-            <button @click="foldScroll">巻く (Fold)</button>
-          </div>
-        </div>
-      </div>
+
+    <ScrollPaper v-if="currentSection === 'about'">
+      about
     </ScrollPaper>
-
-    <ScrollPaper v-if="isOpen"></ScrollPaper>
-    <ScrollPaper v-if="isOpen"></ScrollPaper>
-    <ScrollPaper v-if="isOpen"></ScrollPaper>
-    <ScrollPaper v-if="isOpen"></ScrollPaper>
+    <ScrollPaper v-if="currentSection === 'work'">
+      work
+    </ScrollPaper>
+    <ScrollPaper v-if="currentSection === 'links'">
+      links
+    </ScrollPaper>
+    <ScrollPaper v-if="currentSection === 'contact'">
+      contct
+    </ScrollPaper>
 
 
     <PFooter />
