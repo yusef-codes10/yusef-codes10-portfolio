@@ -8,7 +8,7 @@ import ScrollPaper from './components/scroll/ScrollPaper.vue'
 
 import { ref } from 'vue'
 
-const isAbout = ref(false)
+const isOpen = ref(false)
 </script>
 
 <template>
@@ -32,7 +32,7 @@ const isAbout = ref(false)
       </div>
     </ScrollPaper>
 
-    <ScrollPaper v-if="isAbout"></ScrollPaper>
+    <ScrollPaper v-if="isOpen"></ScrollPaper>
 
     <PFooter />
   </div>
