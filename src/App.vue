@@ -20,7 +20,7 @@ const toggleIsOpen = () => {
     <PHeader />
     <!-- <PMain /> -->
     <!-- <ScrollPaper /> -->
-    <ManuscriptIndex />
+    <ManuscriptIndex @show="toggleIsOpen"/>
     <ScrollPaper>
       <!-- Scroll paper content -->
       <div class="scroll-paper">
