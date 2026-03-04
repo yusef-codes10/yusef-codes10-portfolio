@@ -1,4 +1,7 @@
 <script setup>
+import { defineEmits } from 'vue';
+
+defineEmits(['hide'])
 </script>
 <template>
   <div class="scroll-paper">
