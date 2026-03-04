@@ -55,6 +55,7 @@ const sendEmit = () => {
   top: 50px;
   left: 320px;
   overflow: hidden;
+  padding: 0 1rem;
 
   /* Parchment base */
   background: var(--scroll-color);
