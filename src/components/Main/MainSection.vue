@@ -8,7 +8,7 @@ import { ref } from 'vue'
 import PaperComponent from './PaperComponent.vue'
 import PMain from '../PMain.vue'
 
-const isAbout = ref(false)
+const isAbout = ref(true)
 const isWork = ref(false)
 const isLinks = ref(false)
 const isContact = ref(false)
@@ -21,7 +21,7 @@ const isContact = ref(false)
     <!-- <ScrollPaper /> -->
     <ManuscriptIndex @show="setSection" />
 
-    <PaperComponent v-if="isAbout">This is the About  </PaperComponent>
+    <PaperComponent v-if="isAbout" @hide="isAbout=false">This is the About  </PaperComponent>
     <PaperComponent v-if="isWork">This is the Work  </PaperComponent>
     <PaperComponent v-if="isLinks">This is the Links  </PaperComponent>
     <PaperComponent v-if="isContact">This is the Contacts  </PaperComponent>
