@@ -1,7 +1,14 @@
 <script setup>
-import { defineEmits } from 'vue';
+import { defineEmits, defineProps } from 'vue';
 import { playClickSound } from '@/sound/click.js'
 
+// props to send to the parent which paper is this
+defineProps({
+    paperName: {
+        type: String,
+        required: true
+    }
+})
 
 const emit = defineEmits(['hide'])
 
