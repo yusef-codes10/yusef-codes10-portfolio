@@ -11,10 +11,10 @@ import PMain from '../PMain.vue'
 
 const papersState = ref(
   {
-    isAbout: false,
-    isWork: false,
-    isLinks: false,
-    isContact: false,
+    About: false,
+    Work: false,
+    Links: false,
+    Contact: false,
   }
 )
 
@@ -36,10 +36,10 @@ const hidePaper = (something) => {
     <!-- <ScrollPaper /> -->
     <ManuscriptIndex @show="switchState($event)" />
 
-    <PaperComponent paperName="isAbout" v-if="papersState.isAbout" @hide="hidePaper($event)">This is the About  </PaperComponent>
-    <PaperComponent  paperName="isWork" v-if="papersState.isWork"  @hide="hidePaper($event)">This is the Work  </PaperComponent>
-    <PaperComponent paperName="isLinks" v-if="papersState.isLinks"  @hide="hidePaper($event)">This is the Links  </PaperComponent>
-    <PaperComponent paperName="isContact" v-if="papersState.isContact"  @hide="hidePaper($event)">This is the Contacts  </PaperComponent>
+    <PaperComponent paperName="About" v-if="papersState.About" @hide="hidePaper($event)">This is the About  </PaperComponent>
+    <PaperComponent  paperName="Work" v-if="papersState.Work"  @hide="hidePaper($event)">This is the Work  </PaperComponent>
+    <PaperComponent paperName="Links" v-if="papersState.Links"  @hide="hidePaper($event)">This is the Links  </PaperComponent>
+    <PaperComponent paperName="Contact" v-if="papersState.Contact"  @hide="hidePaper($event)">This is the Contacts  </PaperComponent>
 
   </div>
 </template>

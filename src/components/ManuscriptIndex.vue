@@ -14,10 +14,10 @@ function handleClick(section) {
 <template>
   <div class="kanji">
     <div class="icons">
-      <div class="icon-field" @click="handleClick('isAbout')">我 <span>About</span></div>
-      <div class="icon-field" @click="handleClick('isWork')">匠 <span>Work</span></div>
-      <div class="icon-field" @click="handleClick('isLinks')">縁 <span>Links</span></div>
-      <div class="icon-field" @click="handleClick('isContact')">交 <span>Conctact</span></div>
+      <div class="icon-field" @click="handleClick('About')">我 <span>About</span></div>
+      <div class="icon-field" @click="handleClick('Work')">匠 <span>Work</span></div>
+      <div class="icon-field" @click="handleClick('Links')">縁 <span>Links</span></div>
+      <div class="icon-field" @click="handleClick('Contact')">交 <span>Conctact</span></div>
     </div>
     <!-- 我 (one self) 匠 (Craft/Master)
     <br />

@@ -2,7 +2,8 @@
         
 </script>
 <template>
-    <div>
+    <div class="about-section">
+        
         
     </div>
 </template>
