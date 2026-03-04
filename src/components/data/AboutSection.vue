@@ -12,15 +12,17 @@
     </div>
 
     <div class="about-content">
-      Hi, I'm Yusef a developer and engineer, I...
-      <ul>
-        <li>Build SPA Applications</li>
-        <li>Design Layouts and Cool Components</li>
-        <li>Experiment in AI and Machine Learning</li>
-        <li>Build Database Structure and shcemas</li>
-        <li>Create convanient tools that I would find useful</li>
-        <li>Andm basically anything related to that</li>
-      </ul>
+      <div class="interducing">
+        Hi, I'm Yusef a developer and engineer, I...
+        <ul>
+          <li>Build SPA Applications</li>
+          <li>Design Layouts and Cool Components</li>
+          <li>Experiment in AI and Machine Learning</li>
+          <li>Build Database Structure and shcemas</li>
+          <li>Create convanient tools that I would find useful</li>
+          <li>Andm basically anything related to that</li>
+        </ul>
+      </div>
 
       <div class="education">
         <h2>Education</h2>
@@ -46,8 +48,6 @@
 .intro {
   background-color: aqua;
   padding: 1rem;
-  margin: 0 auto;
-  display: block;
   width: 80%;
 }
 
@@ -59,9 +59,9 @@
 }
 
 .details {
-    background-color: red;
-    margin: 0 auto;
-    width: 40%;
+  background-color: red;
+  margin: 0 auto;
+  width: 40%;
 }
 
 .about-content {
@@ -71,5 +71,14 @@
 
 h1 {
   font-family: var(--font-icons);
+}
+
+.interducing {
+    margin: 1rem auto;
+}
+
+.interducing ul {
+  list-style-type: disc;
+  padding-left: 1.5rem; /* important */
 }
 </style>
