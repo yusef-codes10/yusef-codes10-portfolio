@@ -31,10 +31,10 @@ const switchState = (something) => {
     <!-- <ScrollPaper /> -->
     <ManuscriptIndex @show="switchState($event)" />
 
-    <PaperComponent v-if="isAbout" @hide="isAbout=false">This is the About  </PaperComponent>
-    <PaperComponent v-if="isWork">This is the Work  </PaperComponent>
-    <PaperComponent v-if="isLinks">This is the Links  </PaperComponent>
-    <PaperComponent v-if="isContact">This is the Contacts  </PaperComponent>
+    <PaperComponent v-if="papersState.isAbout" @hide="isAbout=false">This is the About  </PaperComponent>
+    <PaperComponent v-if="papersState.isWork">This is the Work  </PaperComponent>
+    <PaperComponent v-if="papersState.isLinks">This is the Links  </PaperComponent>
+    <PaperComponent v-if="papersState.isContact">This is the Contacts  </PaperComponent>
 
   </div>
 </template>
