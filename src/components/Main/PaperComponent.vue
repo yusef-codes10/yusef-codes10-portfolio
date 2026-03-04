@@ -1,22 +1,33 @@
 <script setup>
 </script>
 <template>
-    <div class="scroll-paper">
-        <slot></slot>
-    </div>
+  <div class="scroll-paper">
+    <div class="x-mark">X</div>
+    <slot></slot>
+  </div>
 </template>
 <style scoped>
-    .paper {
-        height: 200px;
-        width: 400px;
-        background-color: seagreen;
-    }
+.paper {
+  height: 200px;
+  width: 400px;
+  background-color: seagreen;
+  position: relative;
+}
 
+.x-mark {
+  position: absolute;
+  top: 0px;
+  right: 15px;
+  font-weight: 900;
+  font-size: 2rem;
+  cursor: pointer;
+  font-family: var(--font-icons);
+}
 
-    /* === SCROLL PAPER === */
+/* === SCROLL PAPER === */
 .scroll-paper {
-    height: 300px;
-    width: 800px;
+  height: 300px;
+  width: 800px;
   position: absolute;
   top: 50px;
   left: 320px;
@@ -26,9 +37,7 @@
   background: var(--scroll-color);
 
   /* Depth and texture */
-  box-shadow:
-    inset 0 0 18px rgba(255, 240, 200, 0.6),
-    inset 0 0 40px rgba(160, 120, 60, 0.45);
+  box-shadow: inset 0 0 18px rgba(255, 240, 200, 0.6), inset 0 0 40px rgba(160, 120, 60, 0.45);
 }
 
 /* Side shadows on paper */
