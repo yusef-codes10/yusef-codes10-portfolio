@@ -4,18 +4,23 @@ import ManuscriptIndex from '@/components/ManuscriptIndex.vue'
 // import ScrollPaper from '@/components/scroll/ScrollPaper.vue'
 // import ScrollPaper from './components/scroll/ScrollPaper.vue'
 
-import { ref } from 'vue'
+import {  ref } from 'vue'
 import PaperComponent from './PaperComponent.vue'
 import PMain from '../PMain.vue'
 
-const isAbout = ref(true)
-const isWork = ref(false)
-const isLinks = ref(false)
-const isContact = ref(false)
+
+const papersState = ref(
+  {
+    isAbout: false,
+    isWork: false,
+    isLinks: false,
+    isContact: false,
+  }
+)
 
 const switchState = (something) => {
-  something = !something
-  console.log(something);
+  papersState.value[something] = true
+  console.log(papersState.value[something]);
 }
 
 </script>
@@ -24,7 +29,7 @@ const switchState = (something) => {
   <div class="main-section">
     <PMain />
     <!-- <ScrollPaper /> -->
-    <ManuscriptIndex @show="switchState(isAbout)" />
+    <ManuscriptIndex @show="switchState($event)" />
 
     <PaperComponent v-if="isAbout" @hide="isAbout=false">This is the About  </PaperComponent>
     <PaperComponent v-if="isWork">This is the Work  </PaperComponent>
