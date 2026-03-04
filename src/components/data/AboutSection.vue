@@ -58,6 +58,12 @@
   color: var(--font-color);
 }
 
+.details {
+    background-color: red;
+    margin: 0 auto;
+    width: 40%;
+}
+
 .about-content {
   height: 70%;
   overflow-y: auto;
