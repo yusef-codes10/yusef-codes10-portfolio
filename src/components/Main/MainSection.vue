@@ -22,6 +22,7 @@ const switchState = (something) => {
   papersState.value[something] = true
   console.log(papersState.value[something]);
 }
+// show is working now we need to hide
 
 </script>
 
