@@ -5,7 +5,7 @@ const emit = defineEmits(['hide'])
 </script>
 <template>
   <div class="scroll-paper">
-    <div class="x-mark" @click="emit('hide')">X</div>
+    <div class="x-mark" @click="emit('hide', 'about')">X</div>
     <slot></slot>
   </div>
 </template>
