@@ -21,7 +21,10 @@ const sendEmit = () => {
   <div class="scroll-paper">
     <div class="header">
       <div class="x-mark" @click="sendEmit">X</div>
-      {{ props.paperName }}
+      <h1>
+
+        {{ props.paperName }}
+      </h1>
     </div>
     <slot></slot>
   </div>
@@ -99,6 +102,11 @@ h2 {
   font-size: 28px;
   margin: 0;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin: 0.25rem 1rem;
+  font-family: var(--font-icons);
 }
 
 .scroll-content p {
