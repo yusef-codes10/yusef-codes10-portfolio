@@ -1,11 +1,18 @@
 <script setup>
 import { defineEmits } from 'vue';
+import { playClickSound } from '@/sound/click.js'
+
 
 const emit = defineEmits(['hide'])
+
+const sendEmit = (args) => {
+    playClickSound()
+    emit('hide', args)
+}
 </script>
 <template>
   <div class="scroll-paper">
-    <div class="x-mark" @click="emit('hide', 'about')">X</div>
+    <div class="x-mark" @click="sendEmit('isAbout')">X</div>
     <slot></slot>
   </div>
 </template>

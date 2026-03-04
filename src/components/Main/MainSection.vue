@@ -24,6 +24,10 @@ const switchState = (something) => {
 }
 // show is working now we need to hide
 
+const hidePaper = (something) => {
+  papersState.value[something] = false
+}
+
 </script>
 
 <template>
@@ -32,7 +36,7 @@ const switchState = (something) => {
     <!-- <ScrollPaper /> -->
     <ManuscriptIndex @show="switchState($event)" />
 
-    <PaperComponent v-if="papersState.isAbout" @hide="isAbout=false">This is the About  </PaperComponent>
+    <PaperComponent v-if="papersState.isAbout" @hide="hidePaper($event)">This is the About  </PaperComponent>
     <PaperComponent v-if="papersState.isWork">This is the Work  </PaperComponent>
     <PaperComponent v-if="papersState.isLinks">This is the Links  </PaperComponent>
     <PaperComponent v-if="papersState.isContact">This is the Contacts  </PaperComponent>
