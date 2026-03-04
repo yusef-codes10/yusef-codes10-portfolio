@@ -24,5 +24,6 @@ h1 {
   /* font-family: 'Poppins', sans-serif; */
   font-family: 'Yuji Boku', sans-serif;
   font-size: clamp(1.2rem, 4vw + 1rem, 2rem);
+  padding: auto 0;
 }
 </style>

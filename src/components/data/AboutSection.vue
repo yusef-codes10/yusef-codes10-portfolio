@@ -121,3 +121,6 @@ h1 {
   background: linear-gradient(to bottom, #7a4a25, #9e6e45, #7a4a25);
 }
 </style>
+
+<!-- TODO unidy the font, we need kanji font for the big header and icons, another kanji font for title and a reular font for anything else-->
+ <!-- FIXME -->
