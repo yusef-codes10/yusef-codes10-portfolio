@@ -19,7 +19,7 @@ const sendEmit = (args) => {
 </script>
 <template>
   <div class="scroll-paper">
-    <div class="x-mark" @click="sendEmit('isAbout')">X</div>
+    <div class="x-mark" @click="sendEmit('paperName')">X</div>
     <slot></slot>
   </div>
 </template>
