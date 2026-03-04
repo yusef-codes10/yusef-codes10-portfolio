@@ -15,8 +15,8 @@
 
     /* === SCROLL PAPER === */
 .scroll-paper {
-    height: 200px;
-    width: 400px;
+    height: 300px;
+    width: 800px;
   position: absolute;
   top: 32px;
   bottom: 32px;

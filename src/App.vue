@@ -24,7 +24,7 @@ import MainSection from './components/Main/MainSection.vue';
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas:
     'navbar navbar'
-    'scroll manuscript'
+    'main main'
     'footer footer';
   grid-template-rows: auto 1fr auto;
 }
