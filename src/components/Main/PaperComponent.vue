@@ -62,6 +62,8 @@ const sendEmit = () => {
 
   /* Depth and texture */
   box-shadow: inset 0 0 18px rgba(255, 240, 200, 0.6), inset 0 0 40px rgba(160, 120, 60, 0.45);
+
+  cursor: grab;
 }
 
 /* Side shadows on paper */
