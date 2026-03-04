@@ -1,11 +1,11 @@
 <script setup>
 import { defineEmits } from 'vue';
 
-defineEmits(['hide'])
+const emit = defineEmits(['hide'])
 </script>
 <template>
   <div class="scroll-paper">
-    <div class="x-mark">X</div>
+    <div class="x-mark" @click="emit('hide')">X</div>
     <slot></slot>
   </div>
 </template>
