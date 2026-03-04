@@ -13,13 +13,18 @@ const isWork = ref(false)
 const isLinks = ref(false)
 const isContact = ref(false)
 
+const switchState = (something) => {
+  something = !something
+  console.log(something);
+}
+
 </script>
 
 <template>
   <div class="main-section">
     <PMain />
     <!-- <ScrollPaper /> -->
-    <ManuscriptIndex @show="isAbout=true" />
+    <ManuscriptIndex @show="switchState(isAbout)" />
 
     <PaperComponent v-if="isAbout" @hide="isAbout=false">This is the About  </PaperComponent>
     <PaperComponent v-if="isWork">This is the Work  </PaperComponent>
