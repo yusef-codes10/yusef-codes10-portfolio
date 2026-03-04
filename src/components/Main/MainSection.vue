@@ -36,10 +36,10 @@ const hidePaper = (something) => {
     <!-- <ScrollPaper /> -->
     <ManuscriptIndex @show="switchState($event)" />
 
-    <PaperComponent :paperName="isAbout" v-if="papersState.isAbout" @hide="hidePaper($event)">This is the About  </PaperComponent>
-    <PaperComponent  :paperName="isWork" v-if="papersState.isWork">This is the Work  </PaperComponent>
-    <PaperComponent :paperName="isLinks" v-if="papersState.isLinks">This is the Links  </PaperComponent>
-    <PaperComponent :paperName="isContact" v-if="papersState.isContact">This is the Contacts  </PaperComponent>
+    <PaperComponent paperName="isAbout" v-if="papersState.isAbout" @hide="hidePaper($event)">This is the About  </PaperComponent>
+    <PaperComponent  paperName="isWork" v-if="papersState.isWork">This is the Work  </PaperComponent>
+    <PaperComponent paperName="isLinks" v-if="papersState.isLinks">This is the Links  </PaperComponent>
+    <PaperComponent paperName="isContact" v-if="papersState.isContact">This is the Contacts  </PaperComponent>
 
   </div>
 </template>

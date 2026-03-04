@@ -3,7 +3,7 @@ import { defineEmits, defineProps } from 'vue';
 import { playClickSound } from '@/sound/click.js'
 
 // props to send to the parent which paper is this
-defineProps({
+const props = defineProps({
     paperName: {
         type: String,
         required: true
@@ -12,14 +12,14 @@ defineProps({
 
 const emit = defineEmits(['hide'])
 
-const sendEmit = (args) => {
+const sendEmit = () => {
     playClickSound()
-    emit('hide', args)
+    emit('hide', props.paperName)
 }
 </script>
 <template>
   <div class="scroll-paper">
-    <div class="x-mark" @click="sendEmit('paperName')">X</div>
+    <div class="x-mark" @click="sendEmit">X</div>
     <slot></slot>
   </div>
 </template>
