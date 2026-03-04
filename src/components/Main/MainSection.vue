@@ -19,7 +19,7 @@ const isContact = ref(false)
   <div class="main-section">
     <PMain />
     <!-- <ScrollPaper /> -->
-    <ManuscriptIndex @show="setSection" />
+    <ManuscriptIndex @show="isAbout=true" />
 
     <PaperComponent v-if="isAbout" @hide="isAbout=false">This is the About  </PaperComponent>
     <PaperComponent v-if="isWork">This is the Work  </PaperComponent>
