@@ -8,11 +8,11 @@ import { ref } from 'vue'
 import PaperComponent from './PaperComponent.vue'
 import PMain from '../PMain.vue'
 
-const currentSection = ref(null)
+const isAbout = ref(false)
+const isWork = ref(false)
+const isLinks = ref(false)
+const isContact = ref(false)
 
-const setSection = (section) => {
-  currentSection.value = section
-}
 </script>
 
 <template>
@@ -21,10 +21,10 @@ const setSection = (section) => {
     <!-- <ScrollPaper /> -->
     <ManuscriptIndex @show="setSection" />
 
-    <PaperComponent >This is the About  </PaperComponent>
-    <PaperComponent >This is the Work  </PaperComponent>
-    <PaperComponent >This is the Links  </PaperComponent>
-    <PaperComponent >This is the Contacts  </PaperComponent>
+    <PaperComponent v-if="isAbout">This is the About  </PaperComponent>
+    <PaperComponent v-if="isWork">This is the Work  </PaperComponent>
+    <PaperComponent v-if="isLinks">This is the Links  </PaperComponent>
+    <PaperComponent v-if="isContact">This is the Contacts  </PaperComponent>
 
   </div>
 </template>
