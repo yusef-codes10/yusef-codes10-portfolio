@@ -19,7 +19,10 @@ const sendEmit = () => {
 </script>
 <template>
   <div class="scroll-paper">
-    <div class="x-mark" @click="sendEmit">X</div>
+    <div class="header">
+      <div class="x-mark" @click="sendEmit">X</div>
+      {{ props.paperName }}
+    </div>
     <slot></slot>
   </div>
 </template>
@@ -43,7 +46,7 @@ const sendEmit = () => {
 
 /* === SCROLL PAPER === */
 .scroll-paper {
-  height: 300px;
+  height: 450px;
   width: 800px;
   position: absolute;
   top: 50px;
