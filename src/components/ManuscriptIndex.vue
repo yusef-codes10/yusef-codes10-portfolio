@@ -31,7 +31,7 @@ function handleClick(section) {
 .kanji {
   /* font-size: 4rem; */
   font-family: 'Yuji Boku', sans-serif;
-  grid-area: manuscript;
+  grid-area: index;
   border: 3px solid red;
   height: 500px;
   margin: 0.5rem;

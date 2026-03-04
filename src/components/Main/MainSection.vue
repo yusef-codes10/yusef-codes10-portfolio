@@ -52,7 +52,12 @@ const setSection = (section) => {
   position: relative;
   grid-area: main;
   max-height: 80dvh;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "scroll index";
+
 }
 
 

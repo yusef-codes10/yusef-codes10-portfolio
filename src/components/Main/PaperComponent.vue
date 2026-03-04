@@ -18,10 +18,8 @@
     height: 300px;
     width: 800px;
   position: absolute;
-  top: 32px;
-  bottom: 32px;
-  left: 0;
-  right: 0;
+  top: 320px;
+  left: 320px;
   overflow: hidden;
 
   /* Parchment base */
