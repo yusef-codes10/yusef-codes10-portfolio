@@ -5,6 +5,8 @@ import ScrollPaper from '@/components/scroll/ScrollPaper.vue'
 // import ScrollPaper from './components/scroll/ScrollPaper.vue'
 
 import { ref } from 'vue'
+import PaperComponent from './PaperComponent.vue'
+import PMain from '../PMain.vue'
 
 const currentSection = ref(null)
 
@@ -15,12 +17,12 @@ const setSection = (section) => {
 
 <template>
 
-    <!-- <PMain /> -->
+    <PMain />
     <!-- <ScrollPaper /> -->
     <ManuscriptIndex @show="setSection"/>
 
 
-    <ScrollPaper v-if="currentSection === 'about'">
+    <!-- <ScrollPaper v-if="currentSection === 'about'">
       about 
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, magni! Adipisci soluta enim, mollitia impedit quia aut consequatur aliquam, asperiores facilis veniam earum, culpa consectetur distinctio suscipit magnam fugiat recusandae.
     </ScrollPaper>
@@ -32,7 +34,9 @@ const setSection = (section) => {
     </ScrollPaper>
     <ScrollPaper v-if="currentSection === 'contact'">
       contct
-    </ScrollPaper>
+    </ScrollPaper> -->
+
+    <PaperComponent />
 
 
 
