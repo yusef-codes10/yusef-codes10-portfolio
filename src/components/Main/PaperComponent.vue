@@ -2,7 +2,7 @@
 </script>
 <template>
     <div class="scroll-paper">
-        
+        <slot></slot>
     </div>
 </template>
 <style scoped>

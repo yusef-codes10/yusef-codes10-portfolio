@@ -21,21 +21,11 @@ const setSection = (section) => {
     <!-- <ScrollPaper /> -->
     <ManuscriptIndex @show="setSection" />
 
-    <!-- <ScrollPaper v-if="currentSection === 'about'">
-      about 
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, magni! Adipisci soluta enim, mollitia impedit quia aut consequatur aliquam, asperiores facilis veniam earum, culpa consectetur distinctio suscipit magnam fugiat recusandae.
-    </ScrollPaper>
-    <ScrollPaper v-if="currentSection === 'work'">
-      work
-    </ScrollPaper>
-    <ScrollPaper v-if="currentSection === 'links'">
-      links
-    </ScrollPaper>
-    <ScrollPaper v-if="currentSection === 'contact'">
-      contct
-    </ScrollPaper> -->
+    <PaperComponent >This is the About  </PaperComponent>
+    <PaperComponent >This is the Work  </PaperComponent>
+    <PaperComponent >This is the Links  </PaperComponent>
+    <PaperComponent >This is the Contacts  </PaperComponent>
 
-    <PaperComponent />
   </div>
 </template>
 
