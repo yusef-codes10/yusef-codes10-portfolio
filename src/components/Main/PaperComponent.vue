@@ -18,7 +18,7 @@
     height: 300px;
     width: 800px;
   position: absolute;
-  top: 320px;
+  top: 50px;
   left: 320px;
   overflow: hidden;
 
