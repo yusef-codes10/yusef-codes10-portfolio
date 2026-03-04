@@ -1,7 +1,7 @@
 <script setup>
 // import PMain from './components/PMain.vue'
-import ManuscriptIndex from './components/ManuscriptIndex.vue'
-import ScrollPaper from './components/scroll/ScrollPaper.vue'
+import ManuscriptIndex from '@/components/ManuscriptIndex.vue'
+import ScrollPaper from '@/components/scroll/ScrollPaper.vue'
 // import ScrollPaper from './components/scroll/ScrollPaper.vue'
 
 import { ref } from 'vue'

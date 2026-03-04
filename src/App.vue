@@ -1,6 +1,7 @@
 <script setup>
 import PHeader from './components/PHeader.vue'
 import PFooter from './components/PFooter.vue'
+import MainSection from './components/Main/MainSection.vue';
 // import PMain from './components/PMain.vue'
 // import ScrollPaper from './components/scroll/ScrollPaper.vue'
 </script>
@@ -9,6 +10,7 @@ import PFooter from './components/PFooter.vue'
   <div class="portfolio">
     <PHeader />
     <!-- <PMain /> -->
+     <MainSection />
 
     <PFooter />
   </div>
