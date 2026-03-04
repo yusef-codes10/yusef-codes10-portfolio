@@ -28,8 +28,4 @@ import MainSection from './components/Main/MainSection.vue';
     'footer footer';
   grid-template-rows: auto 1fr auto;
 }
-
-
-
 </style>
-<!-- TODO: switch the entire design, main component serves as a container for the main section, reusable scroll paper component, and one emit + 4 different state for each scroll -->

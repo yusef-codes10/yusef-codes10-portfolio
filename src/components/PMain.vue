@@ -143,11 +143,13 @@ console.log(foldScroll)
     #6b4423 85%,
     #3d2817 95%,
     #2a1810 100%
-  );
+    );
+  cursor: pointer;
   box-shadow:
     inset 0 3px 8px rgba(255, 255, 255, 0.3),
     inset 0 -3px 8px rgba(0, 0, 0, 0.6),
     0 4px 12px rgba(0, 0, 0, 0.5);
+
 }
 
 /* Wood grain texture effect */
