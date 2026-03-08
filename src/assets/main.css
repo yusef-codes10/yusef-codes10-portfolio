@@ -14,8 +14,10 @@
 
 
     --font-primary: 'Klee One', cursive;
+    /* --font-primary: 'Crimson Text', serif */
     --font-icons: 'Yuji Boku', sans-serif;
     /* testing more fonts */
+    --font-header: 'Caveat Brush', cursive;
 }
 
 * {
@@ -33,7 +35,8 @@ body {
 
 /* ! testing more fonts */
 
-h1,
+/* h1,
+span,
 .brutalist-title {
     font-family: 'Permanent Marker', cursive;
 }
@@ -44,4 +47,4 @@ h1,
 
 .caption, h3 {
     font-family: 'Indie Flower', cursive;
-}
+} */
