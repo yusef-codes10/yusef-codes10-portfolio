@@ -30,3 +30,18 @@
 body {
     background-color: var(--background-color);
 }
+
+/* ! testing more fonts */
+
+h1,
+.brutalist-title {
+    font-family: 'Permanent Marker', cursive;
+}
+
+.section-label, h2 {
+    font-family: 'Amatic SC', cursive;
+}
+
+.caption, h3 {
+    font-family: 'Indie Flower', cursive;
+}

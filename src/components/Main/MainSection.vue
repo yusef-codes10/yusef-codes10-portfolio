@@ -8,6 +8,7 @@ import {  ref } from 'vue'
 import PaperComponent from './PaperComponent.vue'
 import PMain from '../PMain.vue'
 import AboutSection from '../data/AboutSection.vue'
+import WorkSection from '../data/WorkSection.vue'
 
 
 const papersState = ref(
@@ -38,9 +39,11 @@ const hidePaper = (something) => {
     <ManuscriptIndex @show="switchState($event)" />
 
     <PaperComponent paperName="About" v-if="papersState.About" @hide="hidePaper($event)">
-      <AboutSection />  
+      <AboutSection />
     </PaperComponent>
-    <PaperComponent  paperName="Work" v-if="papersState.Work"  @hide="hidePaper($event)">This is the Work  </PaperComponent>
+    <PaperComponent  paperName="Work" v-if="papersState.Work"  @hide="hidePaper($event)">This is the Work
+      <WorkSection />  
+    </PaperComponent>
     <PaperComponent paperName="Links" v-if="papersState.Links"  @hide="hidePaper($event)">This is the Links  </PaperComponent>
     <PaperComponent paperName="Contact" v-if="papersState.Contact"  @hide="hidePaper($event)">This is the Contacts  </PaperComponent>
 
