@@ -17,9 +17,9 @@ const showPaper = (something) => {
   visiblePaper.value = something
 }
 
-// const hidePaper = (something) => {
-//   papersState.value[something] = false
-// }
+const hidePaper = () => {
+    visiblePaper.value = ''
+}
 
 </script>
 
@@ -29,14 +29,14 @@ const showPaper = (something) => {
     <!-- <ScrollPaper /> -->
     <ManuscriptIndex @show="showPaper($event)" />
 
-    <PaperComponent paperName="About" v-if="visiblePaper === 'About'" @hide="hidePaper($event)">
+    <PaperComponent paperName="About" v-if="visiblePaper === 'About'" @hide="hidePaper">
       <AboutSection />
     </PaperComponent>
-    <PaperComponent  paperName="Work" v-if="visiblePaper === 'Work'"  @hide="hidePaper($event)">This is the Work
+    <PaperComponent  paperName="Work" v-if="visiblePaper === 'Work'"  @hide="hidePaper">This is the Work
       <WorkSection />
     </PaperComponent>
-    <PaperComponent paperName="Links" v-if="visiblePaper === 'Links'"  @hide="hidePaper($event)">This is the Links  </PaperComponent>
-    <PaperComponent paperName="Contact" v-if="visiblePaper === 'Contact'"  @hide="hidePaper($event)">This is the Contacts  </PaperComponent>
+    <PaperComponent paperName="Links" v-if="visiblePaper === 'Links'"  @hide="hidePaper">This is the Links  </PaperComponent>
+    <PaperComponent paperName="Contact" v-if="visiblePaper === 'Contact'"  @hide="hidePaper">This is the Contacts  </PaperComponent>
 
   </div>
 </template>
