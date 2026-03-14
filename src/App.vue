@@ -25,3 +25,4 @@ import MainSection from './components/Main/MainSection.vue'
   grid-template-rows: auto 1fr auto;
 }
 </style>
+<!-- TODO: next we should add the border, the close icon, and the sound effect and change paper style -->
