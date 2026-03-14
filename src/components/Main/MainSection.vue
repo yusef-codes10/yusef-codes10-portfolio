@@ -11,7 +11,7 @@ import AboutSection from '../data/AboutSection.vue'
 import WorkSection from '../data/WorkSection.vue'
 
 
-const visiblePaper = ref(null)
+const visiblePaper = ref('null')
 
 const showPaper = (something) => {
   visiblePaper.value = something
@@ -29,14 +29,14 @@ const showPaper = (something) => {
     <!-- <ScrollPaper /> -->
     <ManuscriptIndex @show="showPaper($event)" />
 
-    <PaperComponent paperName="About" v-if="papersState.About" @hide="hidePaper($event)">
+    <PaperComponent paperName="About" v-if="visiblePaper === 'About'" @hide="hidePaper($event)">
       <AboutSection />
     </PaperComponent>
-    <PaperComponent  paperName="Work" v-if="papersState.Work"  @hide="hidePaper($event)">This is the Work
+    <PaperComponent  paperName="Work" v-if="visiblePaper === 'Work'"  @hide="hidePaper($event)">This is the Work
       <WorkSection />
     </PaperComponent>
-    <PaperComponent paperName="Links" v-if="papersState.Links"  @hide="hidePaper($event)">This is the Links  </PaperComponent>
-    <PaperComponent paperName="Contact" v-if="papersState.Contact"  @hide="hidePaper($event)">This is the Contacts  </PaperComponent>
+    <PaperComponent paperName="Links" v-if="visiblePaper === 'Links'"  @hide="hidePaper($event)">This is the Links  </PaperComponent>
+    <PaperComponent paperName="Contact" v-if="visiblePaper === 'Contact'"  @hide="hidePaper($event)">This is the Contacts  </PaperComponent>
 
   </div>
 </template>
