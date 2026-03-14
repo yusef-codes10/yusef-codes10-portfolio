@@ -60,7 +60,7 @@
   font-size: 3.2rem;
   text-align: center;
   font-weight: 700;
-  color: var(--font-color);
+  color: var(--brand-color);
 }
 
 .details {
