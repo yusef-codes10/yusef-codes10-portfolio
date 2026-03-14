@@ -44,7 +44,7 @@ const hidePaper = () => {
     </transition> -->
 
     <transition name="slide">
-      <PaperComponent v-if="visiblePaper" :paperName="visiblePaper" @hide="hidePaper">
+      <PaperComponent v-if="visiblePaper" :paperName="visiblePaper" @hide="hidePaper" :key="visiblePaper">
         <AboutSection v-if="visiblePaper === 'About'" />
         <WorkSection v-if="visiblePaper === 'Work'" />
 
