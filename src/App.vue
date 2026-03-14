@@ -1,15 +1,15 @@
 <script setup>
 import PHeader from './components/PHeader.vue'
 import PFooter from './components/PFooter.vue'
-import MainSection from './components/Main/MainSection.vue';
+import MainSection from './components/Main/MainSection.vue'
 </script>
 
 <template>
   <div class="portfolio">
     <PHeader />
-     <MainSection />
-    <PFooter />
+    <MainSection />
   </div>
+  <PFooter />
 </template>
 
 <style scoped>

@@ -65,7 +65,7 @@ const sendEmit = () => {
 
     position: fixed;
   right: 0;
-  top: 0;
+  top: 65.19px;
   width: 80%;
   height: 100vh;
 }
