@@ -42,7 +42,7 @@ const hidePaper = (something) => {
       <AboutSection />
     </PaperComponent>
     <PaperComponent  paperName="Work" v-if="papersState.Work"  @hide="hidePaper($event)">This is the Work
-      <WorkSection />  
+      <WorkSection />
     </PaperComponent>
     <PaperComponent paperName="Links" v-if="papersState.Links"  @hide="hidePaper($event)">This is the Links  </PaperComponent>
     <PaperComponent paperName="Contact" v-if="papersState.Contact"  @hide="hidePaper($event)">This is the Contacts  </PaperComponent>
@@ -62,3 +62,6 @@ const hidePaper = (something) => {
   grid-template-areas: 'scroll index';
 }
 </style>
+
+<!-- TODO: we should make 1 paper visible at a time, to avoid stacked paper -->
+ <!-- TODO: I scrapped the dragging abitlity, not good here -->

@@ -309,7 +309,8 @@ button:active {
 
 span {
   font-family: var(--font-icons);
-   
+  color: var(--brand-color);
+
    /* font-family: 'Permanent Marker', cursive; */
 }
 
