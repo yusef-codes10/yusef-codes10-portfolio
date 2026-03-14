@@ -4,23 +4,21 @@ import ManuscriptIndex from '@/components/ManuscriptIndex.vue'
 // import ScrollPaper from '@/components/scroll/ScrollPaper.vue'
 // import ScrollPaper from './components/scroll/ScrollPaper.vue'
 
-import {  ref } from 'vue'
+import { ref } from 'vue'
 import PaperComponent from './PaperComponent.vue'
 import PMain from '../PMain.vue'
 import AboutSection from '../data/AboutSection.vue'
 import WorkSection from '../data/WorkSection.vue'
 
-
-const visiblePaper = ref('null')
+const visiblePaper = ref('')
 
 const showPaper = (something) => {
   visiblePaper.value = something
 }
 
 const hidePaper = () => {
-    visiblePaper.value = ''
+  visiblePaper.value = ''
 }
-
 </script>
 
 <template>
@@ -28,16 +26,32 @@ const hidePaper = () => {
     <PMain />
     <!-- <ScrollPaper /> -->
     <ManuscriptIndex @show="showPaper($event)" />
+    <!--
+    <transition name="slide">
+      <PaperComponent paperName="About" v-if="visiblePaper === 'About'" @hide="hidePaper">
+        <AboutSection />
+      </PaperComponent>
+      <PaperComponent paperName="Work" v-if="visiblePaper === 'Work'" @hide="hidePaper"
+        >This is the Work
+        <WorkSection />
+      </PaperComponent>
+      <PaperComponent paperName="Links" v-if="visiblePaper === 'Links'" @hide="hidePaper"
+        >This is the Links
+      </PaperComponent>
+      <PaperComponent paperName="Contact" v-if="visiblePaper === 'Contact'" @hide="hidePaper"
+        >This is the Contacts
+      </PaperComponent>
+    </transition> -->
 
-    <PaperComponent paperName="About" v-if="visiblePaper === 'About'" @hide="hidePaper">
-      <AboutSection />
-    </PaperComponent>
-    <PaperComponent  paperName="Work" v-if="visiblePaper === 'Work'"  @hide="hidePaper">This is the Work
-      <WorkSection />
-    </PaperComponent>
-    <PaperComponent paperName="Links" v-if="visiblePaper === 'Links'"  @hide="hidePaper">This is the Links  </PaperComponent>
-    <PaperComponent paperName="Contact" v-if="visiblePaper === 'Contact'"  @hide="hidePaper">This is the Contacts  </PaperComponent>
+    <transition name="slide">
+      <PaperComponent v-if="visiblePaper" :paperName="visiblePaper" @hide="hidePaper">
+        <AboutSection v-if="visiblePaper === 'About'" />
+        <WorkSection v-if="visiblePaper === 'Work'" />
 
+        <div v-if="visiblePaper === 'Links'">This is the Links</div>
+        <div v-if="visiblePaper === 'Contact'">This is the Contacts</div>
+      </PaperComponent>
+    </transition>
   </div>
 </template>
 
