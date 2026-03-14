@@ -49,11 +49,11 @@ const sendEmit = () => {
 
 /* === SCROLL PAPER === */
 .scroll-paper {
-  height: 450px;
-  width: 1000px;
-  position: absolute;
-  top: 50px;
-  left: 320px;
+  /* height: 450px; */
+  /* width: 1000px; */
+  /* position: absolute; */
+  /* top: 50px; */
+  /* left: 320px; */
   overflow: hidden;
   padding: 0 1rem;
 
@@ -63,7 +63,11 @@ const sendEmit = () => {
   /* Depth and texture */
   box-shadow: inset 0 0 18px rgba(255, 240, 200, 0.6), inset 0 0 40px rgba(160, 120, 60, 0.45);
 
-  cursor: grab;
+    position: fixed;
+  right: 0;
+  top: 0;
+  width: 80%;
+  height: 100vh;
 }
 
 /* Side shadows on paper */

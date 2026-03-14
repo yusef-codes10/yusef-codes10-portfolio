@@ -66,6 +66,31 @@ const hidePaper = () => {
   grid-template-columns: 1fr 1fr;
   grid-template-areas: 'scroll index';
 }
+
+/* vue styling for the transition */
+.slide-enter-from {
+  transform: translateX(100%);
+}
+
+.slide-enter-to {
+  transform: translateX(0);
+}
+
+.slide-enter-active {
+  transition: transform 0.35s ease;
+}
+
+.slide-leave-from {
+  transform: translateX(0);
+}
+
+.slide-leave-to {
+  transform: translateX(100%);
+}
+
+.slide-leave-active {
+  transition: transform 0.35s ease;
+}
 </style>
 
 <!-- TODO: we should make 1 paper visible at a time, to avoid stacked paper -->
