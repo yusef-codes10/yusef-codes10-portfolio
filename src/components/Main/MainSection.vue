@@ -11,24 +11,15 @@ import AboutSection from '../data/AboutSection.vue'
 import WorkSection from '../data/WorkSection.vue'
 
 
-const papersState = ref(
-  {
-    About: false,
-    Work: false,
-    Links: false,
-    Contact: false,
-  }
-)
+const visiblePaper = ref(null)
 
-const switchState = (something) => {
-  papersState.value[something] = true
-  console.log(papersState.value[something]);
+const showPaper = (something) => {
+  visiblePaper.value = something
 }
-// show is working now we need to hide
 
-const hidePaper = (something) => {
-  papersState.value[something] = false
-}
+// const hidePaper = (something) => {
+//   papersState.value[something] = false
+// }
 
 </script>
 
@@ -36,7 +27,7 @@ const hidePaper = (something) => {
   <div class="main-section">
     <PMain />
     <!-- <ScrollPaper /> -->
-    <ManuscriptIndex @show="switchState($event)" />
+    <ManuscriptIndex @show="showPaper($event)" />
 
     <PaperComponent paperName="About" v-if="papersState.About" @hide="hidePaper($event)">
       <AboutSection />

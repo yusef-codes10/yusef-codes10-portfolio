@@ -50,7 +50,7 @@ const sendEmit = () => {
 /* === SCROLL PAPER === */
 .scroll-paper {
   height: 450px;
-  width: 800px;
+  width: 1000px;
   position: absolute;
   top: 50px;
   left: 320px;
