@@ -47,6 +47,7 @@
   /* background-color: green; */
   padding: 0 2rem;
   height: 100%;
+  /* margin: 1rem 0; */
 }
 
 .intro {
@@ -73,6 +74,7 @@
   height: 50%;
   overflow-y: auto;
   margin: 1rem 0;
+  padding: 1rem;
 }
 
 h1 {
